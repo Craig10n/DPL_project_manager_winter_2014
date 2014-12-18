@@ -1,0 +1,7 @@
+<h1>Title: <%= @project.title %></h1>
+<p>Description: <%= @project.description %></p>
+<p>Deadline: <%= @project.deadline %></p>
+
+<%= link_to "Edit", edit_project_path(@project) %>
+<%= link_to "Destroy", project_path(@project), method: :delete %>
+<%= link_to "Back", projects_path %>

@@ -31,6 +31,9 @@ gem 'better_errors'
 gem 'binding_of_caller'
 gem 'pry-rails'
 
+gem 'devise'
+
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -43,4 +46,3 @@ gem 'pry-rails'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-

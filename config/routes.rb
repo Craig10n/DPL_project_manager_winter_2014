@@ -1,13 +1,10 @@
 Rails.application.routes.draw do
-  devise_for :users
-  get 'tasks/new'
-
-  get 'task/edit'
-  
 
   root 'static_pages#home'
-
   get 'about' => 'static_pages#about'
+
+  devise_for :users, :controllers => { registrations: 'registrations'}
+  resources :users, only: [:show, :index]
 
   resources :projects do
     resources :tasks, except: [:show, :index]
